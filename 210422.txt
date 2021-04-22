@@ -1,0 +1,47 @@
+20210422
+
+git安装配置
+git基本命令学习
+
+git init //初始化git仓库，后加目录为在指定目录下初始化git仓库
+git add //跟踪当前目录下的文件，将文件写入暂存区
+git commit -m "提交说明" //linux用 '' ,windows用 ""，将暂存区文件写入本地仓库中
+git clone <repo> <dir>
+git config --list 查看git信息
+git branch (branchname) //创建分支
+git checkout (branchname) //切换分支
+git merge <分支名> //合并分支到当前分支
+git branch -d <分支名> //删除分支
+git log //查看提交历史记录
+git blame <file> //以列表形式查看指定文件的历史修改记录
+git remote //查看当前配置有哪些远程仓库(cd到git目录下)
+git remote rm <仓库名> //删除远程库
+
+配置远程库步骤(github)
+
+ssh-keygen -t rsa -C "youremail@exaple.com"(此处邮箱为在github上注册的邮箱)
+成功会在~/目录下生成.ssh文件夹，进去并打开id_rsa.pub，复制里面的key
+回到github上，用户头像下拉菜单下
+Settings -> SSH and GPG keys -> add SSH key
+验证是否成功: ssh -T git@github.com
+
+
+本地库提交到github
+
+git remote add origin git@github.com:SilentSheepZ/my-gitTest.git
+
+git push -u origin master
+
+提交到远程库前要执行一下两步操作把文件写入本地仓库
+git add //跟踪当前目录下的文件，将文件写入暂存区
+git commit -m "提交说明" //linux用 '' ,windows用 ""，将暂存区文件写入本地仓库中
+
+
+
+
+
+
+
+
+
+
