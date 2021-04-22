@@ -36,6 +36,7 @@ git push -u origin master
 git add //跟踪当前目录下的文件，将文件写入暂存区
 git commit -m "提交说明" //linux用 '' ,windows用 ""，将暂存区文件写入本地仓库中
 
+git命令行使用vim编辑器编辑文件
 
 
 
